@@ -1,0 +1,9 @@
+version: "3"
+services:
+  libra_cli:
+    build:
+      context: .
+    container_name: libra_cli
+    ports:
+      - "8080:80"
+    restart: on-failure
